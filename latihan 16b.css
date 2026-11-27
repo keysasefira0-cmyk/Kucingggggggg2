@@ -1,0 +1,186 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #fff5f7;
+    color: #59434b;
+    line-height: 1.7;
+}
+
+/* HEADER */
+.jumbotron {
+    background: linear-gradient(135deg, #f7b8cc, #fce0e9);
+    color: #713e54;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.jumbotron h1 {
+    font-size: 45px;
+    letter-spacing: 3px;
+}
+
+.jumbotron p {
+    font-size: 23px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.jumbotron span {
+    font-size: 15px;
+}
+
+/* NAVIGASI */
+nav {
+    background-color: #b76e89;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffe0eb;
+}
+
+/* BAGIAN UTAMA */
+main {
+    display: flex;
+    gap: 25px;
+    padding: 30px;
+    align-items: flex-start;
+}
+
+.content {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 18px;
+    box-shadow: 0 4px 15px rgba(150, 80, 110, 0.12);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(150, 80, 110, 0.2);
+}
+
+.card h2 {
+    color: #b76e89;
+    margin: 12px 0;
+    font-size: 22px;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+/* GAMBAR KUCING */
+.featured-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* PROFILE */
+aside {
+    width: 25%;
+}
+
+.profile {
+    text-align: center;
+    position: sticky;
+    top: 20px;
+}
+
+.profile h2 {
+    color: #b76e89;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #f5c3d3;
+    margin: 15px 0;
+}
+
+.profile h3 {
+    color: #a65375;
+    margin-bottom: 8px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #75465b;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 20px;
+}
+
+footer h3 {
+    color: #ffd5e3;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 5px;
+}
+
+/* RESPONSIVE HP */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .content {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .jumbotron h1 {
+        font-size: 30px;
+    }
+
+    nav li {
+        margin: 5px 8px;
+    }
+
+    .profile {
+        position: static;
+    }
+}
